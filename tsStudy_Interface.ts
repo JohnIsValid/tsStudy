@@ -45,3 +45,21 @@ let newFunc:myFirstInterface = {
 console.log(newFunc.firstNameA)
 console.log(newFunc.lastNameA)
 console.log(newFunc.sayHelloA(10,5))
+
+
+interface namelist {
+    [index:number]:string
+}
+let list2:namelist = ["Google","ruNoob","taoBao"]
+
+
+interface mySecondInterface extends myFirstInterface {
+}
+let hello:mySecondInterface
+hello.firstNameA = "AAA"
+hello.lastNameA = "BBB"
+hello.sayHelloA(3,3)
+
+console.log(hello.firstNameA)
+console.log(hello.lastNameA)
+console.log(hello.sayHelloA(3,3))
