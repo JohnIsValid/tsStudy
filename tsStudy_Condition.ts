@@ -45,32 +45,29 @@ enum eventType {
     reduceItemEvent,
 }
 let needPlayEvent:eventType
-eventType = 0
+needPlayEvent = 0
 
 
-function printEventName(eventName: string): void {
-    console.log(`现在需要播放 ${eventName} 事件`);
-}
-
-switch(eventType) {
-    case 0: {
-        printEventName("普通");
+let grade:string = "A";
+switch(grade) {
+    case "A": {
+        console.log("优");
         break;
     }
-    case 1: {
-        printEventName("战斗");
+    case "B": {
+        console.log("良");
         break;
     }
-    case 2: {
-        printEventName("增加物品");
+    case "C": {
+        console.log("及格");
         break;
     }
-    case 3: {
-        printEventName("减少物品");
+    case "D": {
+        console.log("不及格");
         break;
     }
     default: {
-        printEventName("报错 输入错误的枚举");
+        console.log("非法输入");
         break;
     }
 }

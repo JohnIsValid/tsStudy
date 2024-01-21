@@ -29,15 +29,15 @@ console.log(addFunction(3,22))
 
 
 //可选参数和默认参数
-function buildName(firstName: string, lastName?: string) {
+function buildNameX(firstName: string, lastName?: string) {
     if (lastName)
         return firstName + " " + lastName;
     else
         return firstName;
 }
-let result1 = buildName("Bob");  // 正确
-let result3 = buildName("Bob", "Adams");  // 正确
-//let result2 = buildName("Bob", "Adams", "Sr.");  // 错误，参数太多了
+let result1 = buildNameX("Bob");  // 正确
+let result3 = buildNameX("Bob", "Adams");  // 正确
+//let result2 = buildNameX("Bob", "Adams", "Sr.");  // 错误，参数太多了
 
 
 
